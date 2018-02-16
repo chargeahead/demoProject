@@ -4,6 +4,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class Person {
+	//Test comment
 	String id;
 	String firstName;
 	String lastName;
