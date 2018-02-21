@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @EnableAutoConfiguration
 @ComponentScan({"controller","service"})
 public class DemoApplication {
-
+  //Main
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
