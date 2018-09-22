@@ -1,16 +1,18 @@
 package controller;
 
+import java.util.ArrayList;
 import java.util.Hashtable;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import model.Person;
-
 import service.PersonService;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/persons")
 public class PersonController {
@@ -19,7 +21,7 @@ public class PersonController {
 	PersonService ps;
 
 	@RequestMapping("/all")
-	public Hashtable<String, Person> getAll() {
+	public ArrayList<Person> getAll() {
 		return ps.getAll();
 	}
 
