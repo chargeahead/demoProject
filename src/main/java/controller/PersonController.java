@@ -22,6 +22,7 @@ public class PersonController {
 
 	@RequestMapping("/all")
 	public ArrayList<Person> getAll() {
+		System.out.println("newly created branch  1");
 		return ps.getAll();
 	}
 
