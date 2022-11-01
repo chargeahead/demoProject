@@ -23,6 +23,8 @@ public class PersonController {
 	@RequestMapping("/all")
 	public ArrayList<Person> getAll() {
 		System.out.println("newly added line to check push and pull");
+		System.out.println("newly added line to check push and pull");
+		System.out.println("newly added line to check push and pull");
 		return ps.getAll();
 	}
 
